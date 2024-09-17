@@ -1,0 +1,43 @@
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    flex-direction: column;
+    gap: 5px;
+    max-width: 350px;
+    width: 100%;
+}
+
+.input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    width: 100%;
+}
+
+.dates {
+    display: flex;
+    gap: 5px;
+    width: 100%;
+}
+
+.input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}

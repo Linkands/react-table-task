@@ -1,0 +1,98 @@
+.tasks {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table {
+    border-collapse: collapse;
+    display: block;
+    white-space: nowrap;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f4f4f4;
+    min-width: 70px;
+}
+
+.content {
+    max-width: 100%;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.cell {
+    border: 1px solid #ddd;
+    padding: 8px;
+    position: relative;
+}
+
+.active {
+    background-color: #80bfff;
+}
+
+.tooltip-container {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.active:hover .tooltip-container {
+    display: block;
+}
+
+.tooltip {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    z-index: 1000;
+    width: 200px;
+    top: 20px;
+    left: 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    white-space: normal;
+}
+
+.tooltip p {
+    margin: 5px 0;
+}
+
+.tooltip-date,
+.tooltip-description {
+    font-size: 0.825rem;
+}
+
+.tooltip strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+tbody tr:nth-child(odd) {
+    background: rgb(234, 249, 255);
+}
